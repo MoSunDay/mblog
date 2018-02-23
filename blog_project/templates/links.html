@@ -1,0 +1,22 @@
+<div class="links">
+    <h3>友情链接</h3>
+    <ul>
+{#        <li>#}
+{#            <a href="http://www.baidu.com">百度</a>#}
+{#        </li>#}
+{#        <li>#}
+{#            <a href="http://wwww.hao123.com">hao123</a>#}
+{#        </li>#}
+{#        <li>#}
+{#            <a href="http://wwww.aliyun.com">阿里云</a>#}
+{#        </li>#}
+{#        <li>#}
+{#            <a href="http://wwww.taobao.com">淘宝</a>#}
+{#        </li>#}
+        {% for link in article_links %}
+            <li>
+                <a href="{{ link.callback_url }}" target="_blank" >{{ link }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

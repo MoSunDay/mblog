@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block left_content %}
+    {% include 'ad.html' %}
+    <div class="topnews" xmlns="http://www.w3.org/1999/html">
+        {% include 'topnews.html' %}
+    </div>
+    <div id="pagination">
+        {% include 'pagination.html' %}
+    </div>
+{% endblock %}
+{% block right_content %}
+    <div class="tit01">
+        {% include 'follow.html' %}
+     </div>
+    <div class="moreSelect" id="lp_right_select">
+        {% include 'preview.html' %}
+    </div>
+    <div class="cloud">
+        {% include 'cloud.html' %}
+    </div>
+    <div class="tuwen">
+        {% include 'palce.html' %}
+        {% include 'links.html' %}
+    </div>
+</article>
+{% endblock %}
